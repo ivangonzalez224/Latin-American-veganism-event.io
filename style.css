@@ -77,7 +77,7 @@ header {
 }
 
 .nav_menu .logo {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -117,7 +117,7 @@ header {
 
 .nav__mobile_menu li a {
   color: #fff5e1;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-decoration: none;
   font-size: 32px;
@@ -241,7 +241,7 @@ section {
 }
 
 .mainHeadline h1 {
-  font-family: 'Crete Round', serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -255,7 +255,7 @@ section {
 }
 
 .mainHeadline span {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -263,7 +263,7 @@ section {
 }
 
 .mainHeadline p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -342,57 +342,128 @@ section {
   margin-bottom: 12.8%;
 }
 
-.worksLanguages ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  padding: 0;
-  gap: 12px;
-  margin-bottom: 5%;
+.program {
+    display: flex;
+    flex-direction: column;
+    background-color: #272a31;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3%;
 }
 
-.categories {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 17.2%;
+.program h3 {
+    color: #fff;
+    align-self: center;
+}
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: flex-start;
+.program_separator {
+    width: 5%;
+    height: 1px;
+    background-color: #ec5242;
+    align-self: center;
+    margin-bottom: 3%;
+}
+
+.program_item {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+      }
+}
+
+.programa_actividad {
+    display: flex;
     justify-content: space-between;
-  }
+    align-items: center;
+    padding: 3%;
+    margin-bottom: 3%;
+    background-color: #676c7627;
+    width: 94%;
+
+    @media (min-width: 768px) {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 15%;
+        margin-right: 0.5%;
+        padding: 1%;
+      }
 }
 
-.catWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.program_joinBTNMob {
+    display: flex;
+    background-color: #ec5242;
+    padding: 5% 7%;
+    align-self: center;
+    list-style: none;
+    margin-top: 9%;
 
-  @media (min-width: 768px) {
-    align-items: flex-start;
-    width: 33.33%;
-  }
+    @media (min-width: 768px) {
+        display: none;
+      }
 }
 
-.catWrapper li span {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  color: #fff;
+.program_joinBTNDesktop {
+    display: none;
+    padding: 5%;
+    align-self: center;
+    list-style: none;
+    margin-top: 9%;
+
+    @media (min-width: 768px) {
+        display: flex;
+        margin-top: 3%;
+        padding: 0;
+      }
 }
 
-li .catTitle span {
-  font-family: 'Crete Round', serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 44px;
-  color: #fff;
-  text-decoration: none;
-  list-style: none;
+.program li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    
+    @media (min-width: 768px) {
+        font-size: 12px;
+        text-decoration: underline;
+      }
+}
+
+.program li:hover, .program li:focus-within{
+    padding: 6%;
+    background-color: #70271f;
+}
+
+.program li a:hover, .program li a:focus-within{
+    
+    @media (min-width: 768px) {
+        color: #813b33;
+      }
+}
+
+.programa_actividad span {
+    display: flex;
+    color: #ec5242;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin-right: 5%;
+    justify-self: flex-end;
+}
+
+.programa_actividad p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    width: 60%;
+
+    @media (min-width: 768px) {
+        text-align: center;
+      }
+}
+
+.programa_actividad img {
+  width: 35px;
+  margin-right: 5%;
 }
