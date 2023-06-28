@@ -1,4 +1,5 @@
 const speakersDiv = document.querySelector('.speakers');
+const footerSection = document.querySelector('.footer');
 // speakers data //
 const speakersData = [{
   photo: 'images/ponente1.png', name: 'Teresa Núquez', position: 'Jueza Constitucional del Ecuador', backg: 'Caso Estrellita',
@@ -100,6 +101,7 @@ speakerBtnMob.addEventListener('click', () => {
   if (speakerBtnMore.innerText === 'MORE') {
     speakerBtnMore.innerText = 'LESS    ';
     speakerBtnArrow.innerText = '^';
+    footerSection.style.display = 'flex';
     for (let j = 0; j < speakersCardsId.length; j += 1) {
       const x = document.getElementById(speakersCardsId[j]);
       x.style.display = 'flex';
@@ -107,6 +109,7 @@ speakerBtnMob.addEventListener('click', () => {
   } else {
     speakerBtnMore.innerText = 'MORE';
     speakerBtnArrow.innerText = 'v';
+    footerSection.style.display = 'none';
     for (let j = 0; j < speakersCardsId.length; j += 1) {
       const x = document.getElementById(speakersCardsId[j]);
       x.style.display = 'none';
