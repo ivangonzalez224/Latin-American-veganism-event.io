@@ -197,7 +197,7 @@ footer img {
 .navItems li,
 .nav_top li {
   list-style: none;
-  margin-left: 8.53%;
+  margin-left: 6%;
 }
 
 .nav_top li {
@@ -367,9 +367,18 @@ section {
   }
 }
 
+#nav_home_item, #nav_about_item, #nav_blog_item {
+  color: #ec5242;  
+}
+
 .navItems li a:focus-within,
 .navItems li a:hover {
   color: #ec5242;
+}
+
+.navItems #nav_blog_list {
+  border: 3px solid #ec5242;
+  padding: 0.5% 2%;
 }
 
 .bottomNav ul {
