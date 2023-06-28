@@ -24,7 +24,7 @@
 
 # 📖 Encuentro Latinoamericano de veganismo <a name="about-project"></a>
 
-**Encuentro Latinoamericano de veganismo** is a project to build a web site for the latinoamerican veganism event.
+**Encuentro Latinoamericano de veganismo** is a project to build a web site for the latin american veganism event.
 
 ## 🛠 Built With <a name="built-with"></a>
 
