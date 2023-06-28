@@ -367,8 +367,10 @@ section {
   }
 }
 
-#nav_home_item, #nav_about_item, #nav_blog_item {
-  color: #ec5242;  
+#nav_home_item,
+#nav_about_item,
+#nav_blog_item {
+  color: #ec5242;
 }
 
 .navItems li a:focus-within,
