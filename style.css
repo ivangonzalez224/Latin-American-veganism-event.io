@@ -378,7 +378,8 @@ section {
 }
 
 .program_separator,
-.speakers_separator {
+.speakers_separator,
+.partner_separator {
   width: 5%;
   height: 1px;
   background-color: #ec5242;
@@ -637,4 +638,50 @@ footer {
   @media (min-width: 768px) {
     display: block;
   }
+}
+
+.partner {
+  
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #414246;
+      adding: 1% 5%;
+    }
+ }  
+    
+.partner h3 {
+    color: #d3d3d3;
+}
+
+.partner_separator {
+    width: 2%;
+}
+
+.partner_images{
+  
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3%;
+  }
+  
+}
+
+.partner_imagesTop {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 8%;
+}
+
+.partner_imagesDown {
+  display: flex;
+  justify-content: space-around;
+}
+
+.partner img {
+    margin-left: 3%;
+    margin-right: 2%;
 }
