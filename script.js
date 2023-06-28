@@ -14,7 +14,7 @@ const speakersData = [{
   photo: 'images/ponente6.png', name: 'Mauricio Serrano', position: 'Coordinador de AnimalLibre', backg: 'Mi menú vegano y Veganuary',
 }];
 // card ids //
-let speakersCardsId = [];
+const speakersCardsId = [];
 
 const speakerTitle = document.createElement('h3');
 speakerTitle.innerText = 'Ponentes Destacados';
