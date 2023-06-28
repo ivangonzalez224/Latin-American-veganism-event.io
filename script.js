@@ -13,6 +13,8 @@ const speakersData = [{
 }, {
   photo: 'images/ponente6.png', name: 'Mauricio Serrano', position: 'Coordinador de AnimalLibre', backg: 'Mi menú vegano y Veganuary',
 }];
+// card ids //
+let speakersCardsId = [];
 
 const speakerTitle = document.createElement('h3');
 speakerTitle.innerText = 'Ponentes Destacados';
@@ -54,9 +56,10 @@ for (let i = 0; i < speakersData.length; i += 1) {
   speakersCardRightDivMob.appendChild(cardSeparatorMob);
   speakersCardRightDivMob.appendChild(speakerBackgMob);
   if (i > 1) {
+    speakerCardMob.id = `card${i}`;
     speakerCardMob.style.display = 'none';
+    speakersCardsId.push(`card${i}`);
   }
-
   const speakerCard = document.createElement('div');
   speakerCard.className = 'speaker_card';
   const speakerImg = document.createElement('img');
@@ -86,13 +89,30 @@ for (let i = 0; i < speakersData.length; i += 1) {
 }
 const speakerBtnMob = document.createElement('a');
 speakerBtnMob.className = 'speaker_btnMob';
+speakerBtnMob.title = 'see more speakers';
 const speakerBtnMore = document.createElement('span');
 speakerBtnMore.className = 'speaker_btnMore';
 speakerBtnMore.innerText = 'MORE';
 const speakerBtnArrow = document.createElement('span');
 speakerBtnArrow.className = 'speaker_btnArrow';
 speakerBtnArrow.innerText = 'v';
-// contentSpeakersMob.appendChild(speakerBtnMore);
+speakerBtnMob.addEventListener('click', () => {
+  if (speakerBtnMore.innerText === 'MORE') {
+    speakerBtnMore.innerText = 'LESS    ';
+    speakerBtnArrow.innerText = '^';
+    for (let j = 0; j < speakersCardsId.length; j += 1) {
+      const x = document.getElementById(speakersCardsId[j]);
+      x.style.display = 'flex';
+    }
+  } else {
+    speakerBtnMore.innerText = 'MORE';
+    speakerBtnArrow.innerText = 'v';
+    for (let j = 0; j < speakersCardsId.length; j += 1) {
+      const x = document.getElementById(speakersCardsId[j]);
+      x.style.display = 'none';
+    }
+  }
+});
 speakersDiv.appendChild(speakerBtnMob);
 speakerBtnMob.appendChild(speakerBtnMore);
 speakerBtnMob.appendChild(speakerBtnArrow);
