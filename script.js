@@ -1,5 +1,6 @@
 const speakersDiv = document.querySelector('.speakers');
 const footerSection = document.querySelector('.footer');
+const partnerSection = document.querySelector('.partner');
 // speakers data //
 const speakersData = [{
   photo: 'images/ponente1.png', name: 'Teresa Núquez', position: 'Jueza Constitucional del Ecuador', backg: 'Caso Estrellita',
@@ -100,9 +101,11 @@ speakerBtnArrow.innerText = 'v';
 let speakerCardElementId;
 speakerBtnMob.addEventListener('click', () => {
   if (speakerBtnMore.innerText === 'MORE') {
-    speakerBtnMore.innerText = 'LESS    ';
+    speakerBtnMore.innerText = 'LESS';
+    speakerBtnMob.title = 'see less elements';
     speakerBtnArrow.innerText = '^';
     footerSection.style.display = 'flex';
+    partnerSection.style.display = 'flex';
     for (let j = 0; j < speakersCardsId.length; j += 1) {
       speakerCardElementId = document.getElementById(speakersCardsId[j]);
       speakerCardElementId.style.display = 'flex';
@@ -110,7 +113,9 @@ speakerBtnMob.addEventListener('click', () => {
   } else {
     speakerBtnMore.innerText = 'MORE';
     speakerBtnArrow.innerText = 'v';
+    speakerBtnMob.title = 'see more elements';
     footerSection.style.display = 'none';
+    partnerSection.style.display = 'none';
     for (let j = 0; j < speakersCardsId.length; j += 1) {
       speakerCardElementId = document.getElementById(speakersCardsId[j]);
       speakerCardElementId.style.display = 'none';
