@@ -594,15 +594,25 @@ section {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    display: none;
     background-color: #f2f2f2;
-    padding: 4% 15%;
-}
+    padding: 5% 7%;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        padding: 4% 15%;    
+      }
+    }      
 
 footer img {
-    width: 29%;
-    margin-right: 3%;
+    width: 49%;
+    margin-right: 5%;
+    @media (min-width: 768px) {
+        width: 29%;
+        margin-right: 3%;   
+      }
+    
 }
 
 .footer_credits {
@@ -612,6 +622,19 @@ footer img {
     width: 100%;
 }
 
-.footer_credits span, .footer_credits p{
+.footer_credits span{
     font-size: 12px;
+
+    @media (min-width: 768px) {
+        display: block;   
+      }
+}
+
+.footer_credits p{
+    font-size: 12px;
+    display: none;
+
+    @media (min-width: 768px) {
+        display: block;   
+      }
 }
