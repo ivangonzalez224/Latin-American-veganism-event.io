@@ -249,11 +249,15 @@ section {
   @media (min-width: 768px) {
     padding-top: 3%;
     padding-bottom: 9%;
-    padding-left: 2.7%;
+    padding-left: 15%;
     background-image: url("./images/fondo.svg");
     background-position-y: 0;
     background-position-x: 0;
   }
+}
+
+#section_about {
+  padding-left: 5%;  
 }
 
 .mainHeadline {
@@ -264,44 +268,84 @@ section {
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: flex-start;
-    width: 85%;
-    margin-left: 15%;
+    width: 100%;
   }
 }
 
-.mainHeadline h1 {
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: 0.37px;
+#section_top_greet {
+  font-size: 25px;
   color: #f55800;
 
   @media (min-width: 768px) {
-    font-size: 72px;
+    font-size: 25px;
+    margin-top: 7%;
   }
 }
 
+#mainHeadlineAbout {
+  justify-content: center;
+}
+
+.mainHeadline h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 47px;
+  letter-spacing: 1.37px;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  color: #f55800;
+
+  @media (min-width: 768px) {
+    font-size: 51px;
+    
+  }
+}
+
+#mainHeadlineAbout h1, #mainHeadlineAbout span, #mainHeadlineAbout p {
+  text-align: center;
+}
+
+#mainHeadlineAbout p{
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  padding: 3% 5%;
+  margin-bottom: 7%;
+}
+
 .mainHeadline span {
-  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 13px;
   color: #272a31;
 }
 
-.mainHeadline p {
-  font-family: 'Lato', sans-serif;
+.mainHeadline p, .mainHeadline a {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   color: #272a31;
 
   @media (min-width: 768px) {
     width: 100%;
   }
+}
+
+.mainHeadline p{
+  border: 2px solid #fff;
+  padding: 2%;
+  background-color: #f8f8f8;
+}
+
+.mainHeadline a {
+  font-weight: 900;  
+}
+
+#section_emailRight {
+  text-decoration: none;
+  color: #7d7f85;
+  margin-left: 2%;
 }
 
 .headlineContent {
@@ -312,6 +356,12 @@ section {
     align-items: flex-start;
     width: 55.4%;
   }
+}
+
+#headlineContentAbout {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .navBtnMessage {
