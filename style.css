@@ -442,6 +442,24 @@ section {
   }
 }
 
+#section_organ_top {
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.section_organ_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+  }
+}
+
 .section_organization h2 {
   font-size: 17px;
   font-weight: 400;
@@ -452,6 +470,17 @@ section {
   margin-top: 5%;
   border: 1px solid #d3d3d3;
   padding: 1% 5%;
+}
+
+.section_organ_images img {
+  border: none;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 40%;
+    margin-right: 5%;
+  }
 }
 
 .navBtnMessage {
