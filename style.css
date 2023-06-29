@@ -647,6 +647,15 @@ footer {
   }
 }
 
+#footerAbout {
+  display: flex;
+
+  @media (min-width: 768px) {
+    background-color: #2e2e2e;
+    color: #fff;
+  }
+}
+
 .footer_credits {
   display: flex;
   flex-direction: column;
@@ -671,6 +680,22 @@ footer {
   }
 }
 
+.partner img {
+  margin-left: 7%;
+  margin-right: 7%;
+
+  @media (min-width: 768px) {
+    margin-left: 3%;
+    margin-right: 2%;
+  }
+}
+
+#footerAbout img {
+  @media (min-width: 768px) {
+    content: url("images/logoFooterAbout.png");
+  }
+}
+
 .partner {
   display: none;
   flex-direction: column;
@@ -681,6 +706,14 @@ footer {
   @media (min-width: 768px) {
     display: flex;
     padding: 1% 5%;
+  }
+}
+
+#partner_sectionAbout {
+  display: flex;
+
+  @media (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -721,14 +754,4 @@ footer {
 .partner_imagesDown {
   display: flex;
   justify-content: space-around;
-}
-
-.partner img {
-  margin-left: 7%;
-  margin-right: 7%;
-
-  @media (min-width: 768px) {
-    margin-left: 3%;
-    margin-right: 2%;
-  }
 }
