@@ -106,7 +106,7 @@ To run the project, do the following:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👨‍🏫 Presentation <a name="presentation"></a>presentation
+## 👨‍🏫 Presentation <a name="presentation"></a>
 
 - Video presentation: https://www.loom.com/share/2e5a8ed5f8574881af83c1efc1ca8ead?sid=95a7956d-9231-4cf9-98e4-6fd3d6cbaa62
 
