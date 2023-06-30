@@ -15,6 +15,7 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
+- [👨‍🏫 Presentation](#presentation)   
 - [👥 Authors](#authors)
 - [🛩️ Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -105,6 +106,10 @@ To run the project, do the following:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 👨‍🏫 Presentation <a name="presentation"></a>
+
+- Video presentation: https://www.loom.com/share/2e5a8ed5f8574881af83c1efc1ca8ead?sid=95a7956d-9231-4cf9-98e4-6fd3d6cbaa62
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Iván Gonzalez**
@@ -140,6 +145,13 @@ If you like this project give it a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Micoverse.
+
+<h3><b>Attribution</b></h3>
+
+- Title: Creative Commons
+- Author: Cindy Shin
+- Source: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
+- License: https://creativecommons.org/licenses/by-nc/4.0/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
