@@ -168,13 +168,6 @@ footer img {
 .navItems,
 .nav_top ul {
   display: none;
-
-  @media (min-width: 768px) {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    margin-right: 10%;
-  }
 }
 
 .nav_top ul {
@@ -853,5 +846,13 @@ footer {
   .program li a:hover,
   .program li a:focus-within {
     color: #ec5242;
+  }
+
+  .navItems,
+  .nav_top ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 20%;
   }
 }
