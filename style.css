@@ -55,6 +55,20 @@ header {
   height: 48px;
 }
 
+form ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  justify-content: center;
+  list-style: none;
+
+  @media (min-width: 768px) {
+    width: 60%;
+  }
+}
+
 .nav_menu ul {
   display: flex;
   align-items: center;
@@ -175,6 +189,10 @@ footer img {
 
 .nav_top ul {
   margin-right: 20%;
+}
+
+form li {
+  width: 100%;
 }
 
 .navItems li,
@@ -363,6 +381,33 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+form h2 {
+  color: var(--mainColor);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+form h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  margin-right: 3.2%;
+
+  @media (min-width: 768px) {
+    width: 31.6%;
+    color: #262626;
+    font-size: 24px;
+    text-align: left;
+    line-height: 42px;
+    margin-bottom: 0;
+  }
 }
 
 .section_organization h2 {
@@ -817,7 +862,7 @@ footer {
     margin-left: 3%;
     margin-right: 2%;
   }
-  
+
   .partner {
     display: flex;
     padding: 1% 5%;
@@ -856,7 +901,6 @@ footer {
   #footerAbout img {
     content: url("images/logoFooterAbout.png");
   }
-
 }
 
 button {
@@ -872,52 +916,7 @@ button {
 }
 
 button:hover {
-  padding: 3.8% 6.4% ;
-}
-
-form li {
-  width: 100%;
-}
-
-form h2 {
-  color: var(--mainColor);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-}
-
-form h3 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-  margin-right: 3.2%;
-
-  @media (min-width: 768px) {
-    width: 31.6%;
-    color: #262626;
-    font-size: 24px;
-    text-align: left;
-    line-height: 42px;
-    margin-bottom: 0;
-  }
-}
-
-form ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  gap: 24px;
-  justify-content: center;
-  list-style: none;
-
-  @media (min-width: 768px) {
-    width: 60%;
-  }
+  padding: 3.8% 6.4%;
 }
 
 form {
