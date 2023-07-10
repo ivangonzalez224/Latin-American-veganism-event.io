@@ -101,14 +101,14 @@ speakerBtnMob.className = 'speaker_btnMob';
 speakerBtnMob.title = 'see more speakers';
 const speakerBtnMore = document.createElement('span');
 speakerBtnMore.className = 'speaker_btnMore';
-speakerBtnMore.innerText = 'MORE';
+speakerBtnMore.innerText = 'MÁS';
 const speakerBtnArrow = document.createElement('span');
 speakerBtnArrow.className = 'speaker_btnArrow';
 speakerBtnArrow.innerText = 'v';
 let speakerCardElementId;
 speakerBtnMob.addEventListener('click', () => {
-  if (speakerBtnMore.innerText === 'MORE') {
-    speakerBtnMore.innerText = 'LESS';
+  if (speakerBtnMore.innerText === 'MÁS') {
+    speakerBtnMore.innerText = 'MENOS';
     speakerBtnMob.title = 'see less elements';
     speakerBtnArrow.innerText = '^';
     footerSection.style.display = 'flex';
@@ -118,7 +118,7 @@ speakerBtnMob.addEventListener('click', () => {
       speakerCardElementId.style.display = 'flex';
     }
   } else {
-    speakerBtnMore.innerText = 'MORE';
+    speakerBtnMore.innerText = 'MÁS';
     speakerBtnArrow.innerText = 'v';
     speakerBtnMob.title = 'see more elements';
     footerSection.style.display = 'none';

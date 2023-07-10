@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Latinoamericano de Veganismo</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+      <header class="header_bar">
+        <div class='navContainer'>
+            <div class="header_wrapper">
+                <nav class="nav_top">
+                    <ul>
+                        <li>
+                            <a class="navBtnFb" href="#">
+                                <img class="nav_fbBtn" src="images/fbIcon.png" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="navBtnInstagram" href="#">
+                                <img class="nav_instagramBtn" src="images/instaIcon.png" alt="instagram icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="web page english version" href="#">English</a>
+                        </li>
+                    </ul>                
+                </nav>
+                <nav class="nav_menu">
+                    <div class="nav__desktop">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img class="nav_logo" src="images/logoPage.png" alt="brand icon">
+                            </a>
+                        </div>
+                        <ul class="navItems">
+                            <li>
+                                <a href="index.html" title="home section">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html" title="about section">Nosotros</a>
+                            </li>
+                            <li>
+                                <a title="program section" href="#program_section">Programa</a>
+                            </li>
+                            <li>
+                                <a id="nav_form_item" title="join section" href="contactForm.html">Únete</a>
+                            </li>
+                            <li id="nav_blog_list">
+                                <a id="nav_blog_item" title="news section" href="#blog_section">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="nav_ham_menu">
+                    <ul class="navMenu">
+                        <li>
+                            <a class="navBtnMenu" href="#">
+                                <img class="menuBtn" src="images/menuBtn.png" alt="Hamburger menu icon">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>    
+            </div>
+        </div>
+    </header>
+    <div class="nav_main_mobileMenu">
+        <div class="nav__mobile_menu">
+            <li class="nav_close_button_list">
+                <a class="nav__btn_mobile_closed" href="#">
+                <img src="images/Enabled.svg" alt="closed button">
+                </a>
+            </li>
+            <li  class="nav_btn_list">
+                <a title="home section" href="index.html">Home</a>
+            </li>
+            <li  class="nav_btn_list">
+                <a title="about me section" href="about.html">Nosotros</a>
+            </li>
+            <li class="nav_btn_list">
+                <a title="program section" href="#program_section">Programa</a>
+            </li>
+            <li class="nav_btn_list">
+                <a title="portfolio contact form section" href="contactForm.html">Únete</a>
+            </li>
+            <li class="nav_btn_list">
+                <a title="blog section" href="#blog_section">Blog</a>
+            </li>    
+        </div>
+    </div>
+    <form action="https://formspree.io/f/mdovrwgl" method="post" id="contact_form">
+        <h3><strong style="color:#595337">Estás invitado.</strong><br>Si deseas asisitir al Encuentro Latinoaméricano de veganismo, completa el formulario 
+            y te enviaremos el programa completo a tu correo eléctrónico. ¡ Es gratis ! 
+            También nos interesa saber tus preguntas y comentarios sobre el evento, así que 
+            si te gustaría hablar con nosotros, ponte en contacto.</h3>
+        <ul>
+          <li>
+            <input type="text" aria-label="user_name" name="user_name" maxlength="30" placeholder="Nombre" id="nameField" required/>
+          </li>
+          <li>
+            <input type="email" aria-label="user_mail" name="user_email" placeholder="Correo" id="emailInput" required/>
+          </li>
+          <li>
+            <input type="text" aria-label="user_pais" name="user_pais" placeholder="País" id="paisInput" required/>
+          </li>
+          <li>
+            <textarea id="msgField" aria-label="user_message" maxlength="500" placeholder="Escribe tu comentario o consulta" required></textarea>
+          </li>
+          <small class="errorMessage"></small>
+          <li class="button">
+            <button type="submit">Enviar</button>
+          </li>
+        </ul>
+    </form>
+    <!-- Footer Section -->
+    <footer class="footer" id="footerAbout">
+      <img src="images/logofooter.png" alt="logo brand icon">
+      <div class="footer_credits">
+          <span>2023 Encuentro Latinoamericano de veganismo. Algunos Derechos Reservados</span>
+          <p>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
+              자세한 이용기능 내용과 허락조건은 http://encuentroveganismolatam.com/licences/by/2.0/kr 를 보세요.</p>
+      </div>
+    </footer>
+  <!-- Footer Section -->  
+    <script type="text/javaScript" src="contactForm.js"></script>
+</body>
