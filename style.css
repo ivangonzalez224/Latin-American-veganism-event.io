@@ -34,6 +34,7 @@ header {
   align-items: center;
   background-color: #e0d9d808;
   height: 100%;
+  margin-left: -4%;
 }
 
 .nav_menu {
@@ -142,7 +143,7 @@ footer img {
 .mainHeadline a {
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 24px;
   color: #272a31;
 }
@@ -282,21 +283,22 @@ section {
 .programa_actividad span {
   display: flex;
   color: var(--mainColor);
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 700;
   margin-right: 5%;
   justify-self: flex-end;
 }
 
 .programa_actividad p {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   width: 95%;
 }
 
 .speaker_card span,
 .speaker_cardMob span {
   color: var(--mainColor);
-  font-size: 12px;
+  font-size: 14px;
   margin: 0 0 2% 0;
 }
 
@@ -305,7 +307,7 @@ section {
 }
 
 .footer_credits p {
-  font-size: 12px;
+  font-size: 13px;
   display: none;
 }
 
@@ -618,7 +620,7 @@ form h3 {
 
 .speaker_card .speaker_backg,
 .speaker_cardMob .speaker_backgMob {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
 }
 
