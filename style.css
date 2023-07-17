@@ -64,10 +64,6 @@ form ul {
   gap: 24px;
   justify-content: center;
   list-style: none;
-
-  @media (min-width: 768px) {
-    width: 60%;
-  }
 }
 
 .nav_menu ul {
@@ -401,15 +397,6 @@ form h3 {
   text-align: center;
   color: #172b4d;
   margin-right: 3.2%;
-
-  @media (min-width: 768px) {
-    width: 31.6%;
-    color: #262626;
-    font-size: 24px;
-    text-align: left;
-    line-height: 42px;
-    margin-bottom: 0;
-  }
 }
 
 .section_organization h2 {
@@ -692,6 +679,56 @@ footer {
   justify-content: space-around;
 }
 
+button {
+  background-color: var(--mainColor);
+  cursor: pointer;
+  padding: 3.2% 6%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  transition: padding 1s, color 1s, background-color 1s;
+}
+
+button:hover {
+  padding: 3.8% 6.4%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-bottom: 11%;
+}
+
+form input {
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 3.73%;
+  box-sizing: border-box;
+  color: #979493;
+  margin-top: 2%;
+}
+
+form li textarea {
+  font-style: italic;
+  border: none;
+  background-color: #87844f2e;
+  width: 100%;
+  height: 30.4%;
+  padding: 3.2%;
+  box-sizing: border-box;
+  margin: 5% 0;
+}
+
 @media screen and (min-width: 768px) {
   header {
     height: 120px;
@@ -721,6 +758,7 @@ footer {
   }
 
   footer img {
+    max-height: 10vh;
     width: 29%;
     margin-right: 3%;
   }
@@ -892,6 +930,10 @@ footer {
     color: var(--mainColor);
   }
 
+  form ul {
+    width: 60%;
+  }
+
   .navItems,
   .nav_top ul {
     display: flex;
@@ -903,58 +945,30 @@ footer {
   #footerAbout img {
     content: url("images/logoFooterAbout.png");
   }
-}
 
-button {
-  background-color: var(--mainColor);
-  cursor: pointer;
-  padding: 3.2% 6%;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  color: #fff;
-  border: none;
-  transition: padding 1s, color 1s, background-color 1s;
-}
-
-button:hover {
-  padding: 3.8% 6.4%;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  padding-left: 4%;
-  padding-right: 4%;
-
-  @media (min-width: 768px) {
+  form {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     padding: 6% 3.2% 9.41% 3.2%;
+    margin-bottom: 2%;
   }
-}
 
-form li input {
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  width: 100%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  padding: 3.73%;
-  box-sizing: border-box;
-  color: #979493;
-}
+  form h3 {
+    width: 31.6%;
+    color: #262626;
+    font-size: 24px;
+    text-align: left;
+    line-height: 42px;
+    margin-bottom: 0;
+  }
 
-form li textarea {
-  font-style: italic;
-  border: none;
-  background-color: #87844f2e;
-  width: 100%;
-  height: 30.4%;
-  padding: 3.2%;
-  box-sizing: border-box;
+  form input {
+    border-width: 0 0 1px 0;
+    margin-bottom: 2%;
+  }
+
+  form li textarea {
+    margin: 2% 0;
+  }
 }
