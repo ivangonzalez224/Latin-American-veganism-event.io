@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evento Latinoamericano de Veganismo</title>
+    <title>Nosotros - Evento Latinoamericano de Veganismo</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,16 +34,16 @@
                     <nav class="nav_menu">
                         <div class="nav__desktop">
                             <div class="logo">
-                                <a href="#home_page">
+                                <a href="index.html">
                                     <img class="nav_logo" src="images/logoPage.png" alt="brand icon">
                                 </a>
                             </div>
                             <ul class="navItems">
                                 <li>
-                                    <a id="nav_home_item" href="index.html" title="home section">Inicio</a>
+                                    <a href="index.html" title="home section">Inicio</a>
                                 </li>
                                 <li>
-                                    <a href="about.html" title="about section">Nosotres</a>
+                                    <a id="nav_about_item" href="about.html" title="about section">Nosotres</a>
                                 </li>
                                 <li>
                                     <a title="program section" href="#program_section">Programa</a>
@@ -51,11 +51,8 @@
                                 <li>
                                     <a title="join section" href="contactForm.html">Únete</a>
                                 </li>
-                                <li>
-                                    <a title="sponsor section" href="#partner_section">Patrocinadores</a>
-                                </li>
                                 <li id="nav_blog_list">
-                                    <a id="nav_blog_item" title="news section" href="news.html">Noticias</a>
+                                    <a id="nav_blog_item" title="news section" href="#blog_section">Noticias</a>
                                 </li>
                             </ul>
                         </div>
@@ -79,7 +76,7 @@
                     <img src="images/Enabled.svg" alt="closed button">
                     </a>
                 </li>
-                <li class="nav_btn_list">
+                <li  class="nav_btn_list">
                     <a title="home section" href="index.html">Home</a>
                 </li>
                 <li  class="nav_btn_list">
@@ -92,92 +89,26 @@
                     <a title="portfolio contact form section" href="contactForm.html">Únete</a>
                 </li>
                 <li class="nav_btn_list">
-                    <a title="partners section" href="#speakers_section">Sponsor</a>
-                </li>
-                <li class="nav_btn_list">
-                    <a title="blog section" href="news.html">Noticias</a>
+                    <a title="blog section" href="#blog_section">Noticias</a>
                 </li>    
             </div>
-        </div>    
-        <!-- headline section -->
-        <section>
-            <div class="home_wrapper" id="home_page">
-                <div class="mainHeadline">
-                    <div class="headlineContent">
-                        <span id="section_top_greet">¡ Activando por la liberación animal !</span>
-                        <h1>Encuentro Sudamericano de Veganismo 2023</h1>
-                        <p class="headlineHome_p">Una celebración y compartir de saberes entre activistas, organizaciones y académicas de sudamérica 
-                            por los derechos de los animales que se llevará a cabo en diciembre de 2023 en Lima, Perú.</p>
-                        <h2>9 y 10 de diciembre de 2023</h2>
-                        <span>@Centro de Convenciones APDAYC, Distrito de Miraflores, Lima</span>
-                    </div>
-                </div>    
-            </div>
-        </section>
-    </div>
-    <div class="program" id="program_section">
-        <h3>Programa Principal</h3>
-        <div class="program_separator"></div>
-        <div class="program_item">
-            <div class="programa_actividad">
-                <img src="images/lecture.png" alt="lecture icon">
-                <span>Ponencias</span>
-                <p>Conferencistas internacionales analizando la situación de los derechos de los animales desde la ética, el derecho y los movimientos sociales.</p>
-            </div>
-            <div class="programa_actividad">
-                <img src="images/forum.png" alt="forum icon">
-                <span>Activismo</span>
-                <p>Conoce buenas prácticas de activismo socilal y político en la región e intercambia ideas para cambiar el mundo.</p>
-            </div> 
-            <div class="programa_actividad">
-                <img src="images/exibicionIcon.png" alt="cooking icon">
-                <span>Cultura culinaria</span>
-                <p>Recetas de platos sudamericanos libres de crueldad contra los animales.</p>
-            </div>
-            
-        </div>    
-        <li class="program_joinBTNMob">
-            <a title="join section" href="contactForm.html">Únete al Encuentro</a>
-        </li>
-        <li class="program_joinBTNDesktop">
-            <a title="program section" href="#program_section">MIRA EL PROGRAMA COMPLETO</a>
-        </li>
-    </div>  
-    <!-- Speakers Section -->
-    <div class="speakers" id="speakers_section">
-        
-    </div>
-    <!-- Speakers Section -->
-
-    <!-- Partner Section -->
-    <div class="partner" id="partner_section">
-        <h3> Nos patrocinan:</h3>
-        <div class="partner_separator"></div>
-        <div class="partner_images">
-            <div class="partner_imagesTop">
-                <img src="images/mozilla.svg" alt="mozzila logo">
-                <img src="images/googlekorea.svg" alt="google logo">
-                <img src="images/naver.svg" alt="naver logo">
-            </div>
-            <div class="partner_imagesDown">
-                <img src="images/daumkakaologo.svg" alt="daumkakao logo">
-                <img src="images/airbnb.svg" alt="airbnb logo">
-            </div>
         </div>
+    </div>    
+    <div class="news_top">
+        <h1>NOTICIAS</h1>
+        <div id="news_separator_top"></div>
     </div>
-    <!-- Partner Section -->
-
+    <div class="news_main_content"></div>
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" id="footerAbout">
         <img src="images/logofooter.png" alt="logo brand icon">
         <div class="footer_credits">
             <span>2023 Encuentro Sudamericano de veganismo. Algunos Derechos Reservados</span>
             <p>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
                 자세한 이용기능 내용과 허락조건은 http://encuentroveganismolatam.com/licences/by/2.0/kr 를 보세요.</p>
-        </div> 
+        </div>
     </footer>
-    <!-- Footer Section -->
-    
-    <script type="text/javaScript" src="script.js"></script>    
+    <!-- Footer Section -->  
+    <script type="text/javaScript" src="news.js"></script>    
 </body>
 </html>
