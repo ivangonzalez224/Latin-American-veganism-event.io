@@ -16,7 +16,7 @@ const speakersData = [{
 }, {
   photo: 'images/ponente3.png', name: 'Celeste Jiménez', position: 'UNI Expert - Harmony with Natura AnimalNaturalis Chile / AnimalLibre', backg: 'La cosificación de los animales',
 }, {
-  photo: 'images/ponente4.png', name: 'Oscar Horta', position: 'Filósofo profesor Univerdiad Santiago de Compostela', backg: 'Ética de los derechos animales',
+  photo: 'images/moiraMillan.png', name: 'Moira Millán', position: 'Activista y lideresa mapuche', backg: 'Resistencia e identidad desde el espíritu animal',
 }, {
   photo: 'images/ponente5.png', name: 'Andrés Rieznik', position: 'Físico teórico', backg: 'Fundamentos del veganismo',
 }, {
@@ -26,7 +26,7 @@ const speakersData = [{
 const speakersCardsId = [];
 
 const speakerTitle = document.createElement('h3');
-speakerTitle.innerText = 'Ponentes Destacados';
+speakerTitle.innerText = 'Ponentes  ';
 const speakerSeparator = document.createElement('div');
 speakerSeparator.className = 'speakers_separator';
 const contentSpeakersDiv = document.createElement('div');
