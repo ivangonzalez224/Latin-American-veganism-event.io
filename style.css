@@ -261,13 +261,29 @@ section {
 
 .section_organization p,
 .section_organization span {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
 
 .section_organization span {
   display: none;
+}
+
+.organization_flags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.organization_flagSingle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9%;
+  width: 80%;
 }
 
 .headline_Objetivos ul li {
@@ -436,7 +452,7 @@ form h3 {
   text-align: center;
 }
 
-.section_organization img {
+.section_organization #organizationLogo {
   margin-top: 5%;
   border: 1px solid #d3d3d3;
   padding: 1% 5%;
@@ -446,6 +462,7 @@ form h3 {
   border: none;
   padding: 0;
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .navBtnMessage {
@@ -906,6 +923,15 @@ form li textarea {
     padding: 3% 12%;
   }
 
+  .organization_flags {
+    flex-direction: row;
+  }
+
+  .organization_flagSingle {
+    width: 25%;
+    margin-bottom: 0;
+  }
+
   .section_organ_images {
     display: flex;
     flex-direction: row;
@@ -915,6 +941,7 @@ form li textarea {
   .section_organ_images img {
     width: 40%;
     margin-right: 5%;
+    margin-bottom: 0;
   }
 
   .navBtnMessage.active .messageBtn {
